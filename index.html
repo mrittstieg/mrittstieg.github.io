@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="refresh" content="5; url=https://www.linkedin.com/in/mrittstieg">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" href="img/icon.png">
+  <title>Marius Rittstieg, M.Sc.</title>
+  <script src="js/vunit.js"></script>
+  <script>
+    new vUnit({
+      CSSMap: {
+        // The selector (VUnit will create rules ranging from .selector1 to .selector100)
+        '.vh_height': {
+          // The CSS property (any CSS property that accepts px as units)
+          property: 'height',
+          // What to base the value on (vh, vw, vmin or vmax)
+          reference: 'vh'
+        },
+        '.vw_width': {
+          // The CSS property (any CSS property that accepts px as units)
+          property: 'width',
+          // What to base the value on (vh, vw, vmin or vmax)
+          reference: 'vw'
+        },
+        // Wanted to have a font-size based on the viewport width? You got it.
+        '.vw_font-size': {
+          property: 'font-size',
+          reference: 'vw'
+        },
+        // vmin and vmax can be used as well.
+        '.vmin_margin-top': {
+          property: 'margin-top',
+          reference: 'vmin'
+        }
+      },
+      onResize: function() {
+        console.log('A screen resize just happened, yo.');
+      }
+    }).init(); // call the public init() method
+  </script>
+</head>
+
+<body class="home">
+
+  <div class="container homescreen vh_height85">
+    <div class="container center hide-on-med-and-down vw_width25">
+      <img class="logo" src="img/logo.png" style="height: 164px; width: auto; margin-top: 24vh;">
+      <p>
+        Hi there, you will be redirected shortly. In case your ancient browser does not support this sort of thing,
+        you may actively <a class="materialize-red-text" href="https://www.linkedin.com/in/mrittstieg" style="text-decoration: none !important;">click here</a>.
+      </p>
+    </div>
+    <div class="container center hide-on-large-only vw_width67">
+      <img class="logo" src="img/logo.png" style="height: 125px; width: auto; margin-top: 20vh;">
+      <p>
+        Hi there, you will be redirected shortly. In case your ancient browser does not support this sort of thing,
+        you may actively <a class="materialize-red-text" href="https://www.linkedin.com/in/mrittstieg" style="text-decoration: none !important;">click here</a>.
+      </p>
+    </div>
+  </div>
+
+  <footer class="page-footer homefooter vh_height15">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s8">
+          <p class="signature">
+            &copy; 2024 Marius Rittstieg
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
